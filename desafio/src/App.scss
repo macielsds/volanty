@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fafafa;
+  text-align: center;
+  font-family: "Source Sans Pro";
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.Card {
+  color: #ffffff;
+  background: linear-gradient(90deg, #009DDF 0%, #2F4F98 50%);
+  padding: 100px 32px 32px;
+  border-radius: 4px;
+  margin: 120px auto 32px;
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+  box-shadow: 0 8px 8px rgba(0,0,0,.24), 0 0 8px rgba(0,0,0,.12);
+}
+
+.Badge {
+  position: absolute;
+  top: -80px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  &__box {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: block;
+    margin: auto;
+    padding: 16px;
+    background-color: #fff;
+    filter: drop-shadow(2px 8px 8px rgba(0,0,0,.24));
+  }
+  &__image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+    object-position: center;
+  }
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 0.35em;
+    margin-top: 2em;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 1em;
+    margin-top: 2em;
+    &::before {
+      content: '';
+      border-top: 1px dashed #fff;
+      padding-top: 2em;
+      display: block;
+    }
+}
+
+label {
+  display: block;
+  margin: 24px 0 8px;
+  &:first-of-type {
+    margin-top: 0;
+  }
+}
+
+select {
+  width: 100%;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  background-image: none;
+  font-size: 14px;
+  color: #353e54;
+  padding: 10px 12px;
+  background: #fafafa;
+  border: 1px solid #353e54;
+  border-radius: 4px;
+  &:disabled {
+    opacity: 0.8;
+    cursor: not-allowed;
+  }
+}
+
+
+.select-box {
+  position: relative;
+  max-width: 300px;
+  margin: auto;
+  img {
+    position: absolute;
+    top: 43%;
+    right: 8%;
+  }
+}
+
+small {
+  margin-bottom: 24px;
+  display: block;
+  color: #999;
+}
+
+.Results {
+  &__table {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    border-collapse: collapse;
+    border: 1px solid #fff;
+    th {
+      font-weight: 600;
+    }
+    td,th {
+      border: 1px solid #fff;
+      text-align: left;
+      padding: 8px;
+    }
+  }
+}
