@@ -3,7 +3,7 @@ import Results from '../calculator/Results'
 import SelectBox from './SelectBox'
 import '../../App.scss'
 
-const endpoint = 'http://fipeapi.appspot.com/api/1/carros/'
+const endpoint = 'http://fipeapi.appspot.com/api/1/carros'
 
 class CalculatorForm extends Component {
     constructor(props) {
