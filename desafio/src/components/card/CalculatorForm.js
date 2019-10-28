@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Results from '../calculator/Results'
 import SelectBox from './SelectBox'
 import '../../App.scss'
+import mock from '../../mock.json'
 
 const endpoint = 'http://fipeapi.appspot.com/api/1/carros'
 
@@ -36,7 +37,16 @@ class CalculatorForm extends Component {
                 this.setState({
                     brands: initialBrands,
                 });
-            });
+            }).catch((error) => {
+                console.log('API indisponível!')
+                console.error(error)
+                initialBrands = mock.brands.map((brand) => {
+                    return brand
+                });
+                this.setState({
+                    brands: initialBrands,
+                });
+            })
     }
 
     updateimage() {
@@ -82,7 +92,18 @@ class CalculatorForm extends Component {
                 });
                 this.setState({models: models});
                 this.updateimage()
-            });
+            }).catch(error => {
+                console.log('API indisponível!')
+                console.error(error)
+                models = mock.models.map((model) => {
+                    return model
+                });
+                this.setState({models: models});
+                this.updateimage()
+            }).finally(()=> {
+                let element = document.querySelector(".SelectBox:last-child")
+                element.scrollIntoView({ behavior: 'smooth'})
+            })
     }
 
     onSelectModel(event) {
@@ -106,7 +127,18 @@ class CalculatorForm extends Component {
                 });
                 this.setState({years: years})
                 this.updateimage()
-            });
+            }).catch(error => {
+                console.log('API indisponível!')
+                console.error(error)
+                years = mock.years.map((year) => {
+                    return year
+                });
+                this.setState({years: years})
+                this.updateimage()
+            }).finally(()=> {
+                let element = document.querySelector(".SelectBox:last-child")
+                element.scrollIntoView({ behavior: 'smooth'})
+            })
     }
 
     onSelectYear(event) {
@@ -128,7 +160,12 @@ class CalculatorForm extends Component {
                 if(!data) return false
                 this.setState({selectedCar: data})
                 this.updateimage()
-            });
+            }).catch(error => {
+                console.log('API indisponível!')
+                console.error(error)
+                this.setState({selectedCar: mock.result})
+                this.updateimage()
+            })
     }
 
     render() {

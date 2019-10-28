@@ -4,6 +4,11 @@ import '../../App.scss'
 
 class SelectBox extends Component {
 
+    constructor(props) {
+        super(props);
+        this.onChange = this.onChange.bind(this);
+    }
+
     onChange(value) {
         this.props.onChangeEvent(value)
     }

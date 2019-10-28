@@ -34,6 +34,9 @@ class Results extends Component {
                 time: showSelectedCar.time,
                 id: showSelectedCar.id
             })
+
+            let element = document.querySelector(".Results")
+            element.scrollIntoView({ behavior: 'smooth'})
         }
     }
 

@@ -1,0 +1,37 @@
+{
+    "brands": [{
+        "name": "Fiat",
+        "id": "01"
+    }],
+    "models": [{
+        "fipe_name": "Fiat Uno Mile",
+        "name": "Fiat Uno Mile",
+        "id": "01"
+    }],
+    "years": [{
+        "referencia": "001",
+        "fipe_codigo": "001-b",
+        "name": "Fiat Uno Mile 2p",
+        "combustivel": "Gasolina",
+        "marca": "Fiat",
+        "ano_modelo": "2000",
+        "preco": "R$ 10.000,00",
+        "key": "",
+        "time": "",
+        "veiculo": "Fiat Uno Mile 2p",
+        "id": "01"
+    }],
+    "result": {
+        "referencia": "001",
+        "fipe_codigo": "001-b",
+        "name": "Fiat Uno Mile 2p",
+        "combustivel": "Gasolina",
+        "marca": "Fiat",
+        "ano_modelo": "2000",
+        "preco": "R$ 10.000,00",
+        "key": "",
+        "time": "",
+        "veiculo": "Fiat Uno Mile 2p",
+        "id": "01"
+    }
+}
