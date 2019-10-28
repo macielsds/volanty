@@ -1,11 +1,14 @@
 import React, {Component} from 'react';
 import '../../App.scss'
 
+const endpoint = '//www.carimagery.com/api.asmx/GetImageUrl?searchTerm='
+const imageDefault = 'http://denrakaev.com/wp-content/uploads/2015/03/no-image-800x511.png'
+
 class Badge extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            imageURL: 'http://denrakaev.com/wp-content/uploads/2015/03/no-image-800x511.png'
+            imageURL: imageDefault
         }
     }
 
@@ -25,8 +28,6 @@ class Badge extends Component {
 
     getCarImage(keyword) {
         if(keyword === '' || keyword === undefined) return false
-
-        let endpoint = '//www.carimagery.com/api.asmx/GetImageUrl?searchTerm='
 
         fetch(endpoint + keyword)
             .then(response => response.text())

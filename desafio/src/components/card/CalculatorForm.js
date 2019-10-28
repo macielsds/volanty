@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Results from '../calculator/Results'
+import SelectBox from './SelectBox'
 import '../../App.scss'
-import arrow from '../..//arrow.svg';
 
 const endpoint = 'http://fipeapi.appspot.com/api/1/carros/'
 
@@ -132,42 +132,12 @@ class CalculatorForm extends Component {
     }
 
     render() {
-        let optionBrands = this.state.brands.map((brand) =>
-                <option key={brand.id} value={brand.id}>{brand.fipe_name}</option>
-            );
-        let optionModels = this.state.models.map((model) =>
-                <option key={model.id} value={model.id}>{model.fipe_name}</option>
-            );
-        let optionYears = this.state.years.map((year) =>
-                <option key={year.id} value={year.id}>{year.name}</option>
-            );
         return (
             <div className="CalculatorForm">
-                <form >
-                    <label>Marca:</label>
-                    <div className="select-box">
-                        <select className="select-brand" value={this.state.brand} onChange={this.onSelectBrand} disabled={(this.state.brands.length > 0)? null : true}>
-                            <option value=''>Selecione</option>
-                            {optionBrands}
-                        </select>
-                        <img src={arrow} className="select-arrow" alt="arrow" />
-                    </div>
-                    <label>Modelo:</label>
-                    <div className="select-box">
-                        <select className="select-model" onChange={this.onSelectModel} disabled={(this.state.models.length > 0)? null : true}>
-                            <option value=''>Selecione</option>
-                            {optionModels}
-                        </select>
-                        <img src={arrow} className="select-arrow" alt="arrow" />
-                    </div>
-                    <label>Ano:</label>
-                    <div className="select-box">
-                        <select className="select-year" disabled={(this.state.years.length > 0)? null : true} onChange={this.onSelectYear}>
-                            <option value=''>Selecione</option>
-                            {optionYears}
-                        </select>
-                        <img src={arrow} className="select-arrow" alt="arrow" />
-                    </div>
+                <form>
+                    <SelectBox label="Marca" options={this.state.brands} onChangeEvent={this.onSelectBrand}/>
+                    {this.state.models.length > 0? <SelectBox label="Modelo" options={this.state.models} onChangeEvent={this.onSelectModel}/> : null}
+                    {this.state.years.length > 0? <SelectBox label="Ano" options={this.state.years} onChangeEvent={this.onSelectYear}/> : null}
                 </form>
                 { this.state.selectedCar ? <Results showSelectedCar={this.state.selectedCar} /> : null }
             </div>
