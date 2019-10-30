@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/volanty/static/css/main.9332e802.chunk.css",
+    "main.js": "/volanty/static/js/main.76aa8fa0.chunk.js",
+    "main.js.map": "/volanty/static/js/main.76aa8fa0.chunk.js.map",
+    "runtime-main.js": "/volanty/static/js/runtime-main.60ed0ef7.js",
+    "runtime-main.js.map": "/volanty/static/js/runtime-main.60ed0ef7.js.map",
+    "static/js/2.0dc2af67.chunk.js": "/volanty/static/js/2.0dc2af67.chunk.js",
+    "static/js/2.0dc2af67.chunk.js.map": "/volanty/static/js/2.0dc2af67.chunk.js.map",
+    "index.html": "/volanty/index.html",
+    "precache-manifest.a2205eaf8766b69ca4fb9eecd9fcd8aa.js": "/volanty/precache-manifest.a2205eaf8766b69ca4fb9eecd9fcd8aa.js",
+    "service-worker.js": "/volanty/service-worker.js",
+    "static/css/main.9332e802.chunk.css.map": "/volanty/static/css/main.9332e802.chunk.css.map",
+    "static/media/arrow.svg": "/volanty/static/media/arrow.cdfdf297.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.60ed0ef7.js",
+    "static/js/2.0dc2af67.chunk.js",
+    "static/css/main.9332e802.chunk.css",
+    "static/js/main.76aa8fa0.chunk.js"
+  ]
+}
