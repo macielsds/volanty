@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/volanty/desafio/precache-manifest.8f92bc88d7e7eb8f8f5fd56740a999a2.js"
+  "/volanty/desafio/precache-manifest.fe38ffe4f75aaf859963dcaee3009959.js"
 );
 
 self.addEventListener('message', (event) => {

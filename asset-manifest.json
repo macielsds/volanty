@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/volanty/desafio/static/css/main.9332e802.chunk.css",
-    "main.js": "/volanty/desafio/static/js/main.8150df6c.chunk.js",
-    "main.js.map": "/volanty/desafio/static/js/main.8150df6c.chunk.js.map",
+    "main.js": "/volanty/desafio/static/js/main.a18ca8f5.chunk.js",
+    "main.js.map": "/volanty/desafio/static/js/main.a18ca8f5.chunk.js.map",
     "runtime-main.js": "/volanty/desafio/static/js/runtime-main.5020354f.js",
     "runtime-main.js.map": "/volanty/desafio/static/js/runtime-main.5020354f.js.map",
-    "static/js/2.24c924ed.chunk.js": "/volanty/desafio/static/js/2.24c924ed.chunk.js",
-    "static/js/2.24c924ed.chunk.js.map": "/volanty/desafio/static/js/2.24c924ed.chunk.js.map",
+    "static/js/2.0dc2af67.chunk.js": "/volanty/desafio/static/js/2.0dc2af67.chunk.js",
+    "static/js/2.0dc2af67.chunk.js.map": "/volanty/desafio/static/js/2.0dc2af67.chunk.js.map",
     "index.html": "/volanty/desafio/index.html",
-    "precache-manifest.8f92bc88d7e7eb8f8f5fd56740a999a2.js": "/volanty/desafio/precache-manifest.8f92bc88d7e7eb8f8f5fd56740a999a2.js",
+    "precache-manifest.fe38ffe4f75aaf859963dcaee3009959.js": "/volanty/desafio/precache-manifest.fe38ffe4f75aaf859963dcaee3009959.js",
     "service-worker.js": "/volanty/desafio/service-worker.js",
     "static/css/main.9332e802.chunk.css.map": "/volanty/desafio/static/css/main.9332e802.chunk.css.map",
     "static/media/arrow.svg": "/volanty/desafio/static/media/arrow.cdfdf297.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.5020354f.js",
-    "static/js/2.24c924ed.chunk.js",
+    "static/js/2.0dc2af67.chunk.js",
     "static/css/main.9332e802.chunk.css",
-    "static/js/main.8150df6c.chunk.js"
+    "static/js/main.a18ca8f5.chunk.js"
   ]
 }
