@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "565af3cec382459a1f1a44b37de12dc3",
+    "revision": "83de74215b322fef6d72609d731d0f7b",
     "url": "/volanty/index.html"
   },
   {
-    "revision": "a36f37afa2fa7244b5a0",
+    "revision": "f507f694a5eabfa88290",
     "url": "/volanty/static/css/main.9332e802.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/volanty/static/js/2.0dc2af67.chunk.js"
   },
   {
-    "revision": "a36f37afa2fa7244b5a0",
-    "url": "/volanty/static/js/main.76aa8fa0.chunk.js"
+    "revision": "f507f694a5eabfa88290",
+    "url": "/volanty/static/js/main.81bad6bb.chunk.js"
   },
   {
     "revision": "708ad7ff6536fb837b0c",
