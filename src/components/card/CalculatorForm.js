@@ -4,7 +4,7 @@ import SelectBox from './SelectBox'
 import '../../App.scss'
 import mock from '../../mock.json'
 
-const endpoint = 'http://fipeapi.appspot.com/api/1/carros'
+const endpoint = '//fipeapi.appspot.com/api/1/carros'
 
 class CalculatorForm extends Component {
     constructor(props) {
